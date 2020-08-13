@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        p {
+            background-color: red;
+            padding: 5px;
+            width: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  
+        1.  pclick(itm)     子组件创建一个事件
+
+        2.  this.$emit('itmclick',itm)    子组件事件里发射传的值
+             $emit( '父组件下的 <lin></lin> 标签自定义一个绑定' , 传的值)
+
+        3.   <Lin  @itmclick="linclick"></Lin>  
+            linclick 事件是父组件接收的事件
+     -->
+
+
+
+    <div id="d1">
+        <Lin  @itmclick="linclick"></Lin>
+    </div>
+
+    <!-- 分离模板  -->
+    <template id="lin">
+        <div>
+            <p v-for="itm in list" @click="pclick(itm)">{{itm.name}}</p>
+        </div>
+    </template>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        // 调用id
+        const app = new Vue({
+            el: "#d1",
+            data: {
+                inputText: ''
+            },
+            methods:{
+                linclick(a){
+                    console.log(a);
+                }
+            },
+            components: {
+                "Lin": {
+                    template: '#lin',
+                    data() {
+                        return {
+                            list: [{
+                                id: 1,
+                                name: '一号'
+                            }, {
+                                id: 2,
+                                name: '二号'
+                            }],
+                        }
+                    },
+                    methods: {
+                        pclick(itm){
+                            // this.$emit 子传父 
+                            this.$emit('itmclick',itm)
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

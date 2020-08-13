@@ -1,0 +1,6 @@
+//安装webpack
+    //全局
+        npm install webpack
+    //局部
+        cd 对应目录
+        npm install webpack --save-dev

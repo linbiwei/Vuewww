@@ -1,0 +1,14 @@
+ 安装 脚手架
+    npm install -g @vue/cli
+
+   额外安装脚手架2
+      npm install @cue/cli-init
+   初始化脚手架2的项目
+         vue init webpack (项目名字)
+      启动
+         npm run dev
+
+   初始化脚手架3的项目
+         vue create  (项目名字)
+      启动
+         npm run serve

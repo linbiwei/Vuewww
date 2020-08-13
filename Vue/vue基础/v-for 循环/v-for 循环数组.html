@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        <ul>
+            <li v-for="(val,index) in a">{{val}},{{index}}</li>
+        </ul>
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#d1',
+            data: {
+                a: ['a','b','c']
+            }
+        })
+    </script>
+</body>
+
+</html>

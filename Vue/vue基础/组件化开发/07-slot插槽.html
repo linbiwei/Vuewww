@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+        <z1></z1>
+        <z1><div>我是插槽2</div></z1>
+        <z1>
+            <div>我是插槽2号</div>
+            <div>嵌套div</div>
+        </z1>
+    </div>
+
+    <template id="z1">
+        <div>
+            <h3>我是组件</h3>
+            <p>哈哈哈哈</p>
+            <slot>
+                <!-- 默认值 -->
+                 <div>默认插槽值</div>
+            </slot>
+        </div>
+    </template>
+    <script src="/Vue/vue.js"></script>
+    <script>
+        const d1 = new Vue({
+            el: "#d1",
+            data: {
+
+            },
+            components: {
+                'z1': {
+                    template: '#z1'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

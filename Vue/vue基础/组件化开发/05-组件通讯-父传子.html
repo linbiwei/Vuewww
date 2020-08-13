@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+        <input type="text" v-model="inputText">
+        <!-- 子组件 -->
+        <!-- 通过v-bind -->
+        <Lin :title="title" :list='list' :inputtext="inputText"></Lin>
+    </div>
+
+    <!-- 分离模板  -->
+    <template id="lin">
+        <div>
+            <p>输入的值{{inputtext}}</p>
+            <h1>{{title}}</h1>
+            <p v-for="itm in list">{{itm}}</p>
+        </div>
+    </template>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        // 调用id
+        const app = new Vue({
+            el: "#d1",
+            data: {
+                title: '我是父传的子标题',
+                list: ['我是父传子的列表1', '我是父传子的标题2'],
+                inputText: ''
+            },
+            components: {
+                "Lin": {
+                    template: '#lin',
+                    //  props 不能是驼峰结构
+                    props: {
+                        // 定义类型只能是字符串
+                        title: [String],
+                        inputtext: [String],
+                        // 定义类型只能是数据
+                        list: [Array]
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

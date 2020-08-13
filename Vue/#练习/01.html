@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <h1>名字合成:{{name}}</h1>
+        <ul>
+            <li v-for="(addad,i) in darta" @click="adasdasda(i)" :class="{red:shuzi==i}">{{addad,i}}</li>
+        </ul>
+        <div>
+            <button @click="getJiafa()">+</button>
+            <p>数字：{{shuzi}}</p>
+            <button @click="getJianfa()">-</button>
+        </div>
+        <div>
+            <p>数字总合：{{zohe}}</p>
+        </div>
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#d1',
+            data: {
+                lin: 'lin',
+                bi: 'bi',
+                wei: 'wei',
+                shuzi: 0,
+                darta: ['你好1', '你好2', '你好3', '你好4'],
+                shuzhihe: [{
+                        shuzi1: 1
+                    },
+                    {
+                        shuzi1: 2
+                    },
+                    {
+                        shuzi1: 3
+                    },
+                    {
+                        shuzi1: 4
+                    },
+                ]
+            },
+            computed: { //计算机属性
+                // 缓存效果
+                name() {
+                    return this.lin + this.bi + this.wei
+                },
+                zohe() {
+                    let add = 0;
+                    for (let i in this.shuzhihe) {
+                        add += this.shuzhihe[i].shuzi1;
+                        if (i == this.shuzhihe.length - 1) {
+                            return add;
+                        }
+                    }
+                }
+            },
+            methods: { //函数事件
+                // 多次执行没缓存
+                getJiafa() {
+                    this.shuzi++;
+                },
+                getJianfa() {
+                    this.shuzi--;
+                },
+                adasdasda(a) {
+                    this.shuzi = a
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

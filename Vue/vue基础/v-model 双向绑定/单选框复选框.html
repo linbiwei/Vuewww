@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="d1">
+      <!-- 多选框 -->
+      <label :for="i" v-for="i in a">
+        <input type="checkbox" :value="i" :id="i" v-model="fixk" />{{i}}
+      </label>
+      {{fixk}}
+      <br>
+      <!-- 单选框  -->
+      <label :for="i" v-for="i in b">
+        <input type="radio" :value="i" name="nannv" :id="i" v-model="nannv" />{{i}}
+      </label>
+      {{nannv}}
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+      new Vue({
+        el: "#d1",
+        data: {
+          a: ["a", "b", "c"],
+          b:['nan','nv'],
+          fixk: [],
+          nannv:''
+        },
+      });
+    </script>
+  </body>
+</html>

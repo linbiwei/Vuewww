@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+        <!-- 使用默认 -->
+        <z1></z1>
+
+        <!-- slot-scope -->
+        <z1>
+            <div slot-scope="adc">
+                <span v-for='i in adc.data'>{{i}}</span>
+            </div>
+        </z1>
+    </div>
+
+    <template id="z1">
+        <div>
+           <slot :data="add">
+                <ul>
+                    <li v-for='i in add'>{{i}}</li>
+                </ul>
+           </slot>
+        </div>
+    </template>
+    <script src="/Vue/vue.js"></script>
+    <script>
+        const d1 = new Vue({
+            el: "#d1",
+            data: {
+
+            },
+            components: {
+                'z1': {
+                    template: '#z1',
+                    data () {
+                        return {
+                            add:['a','b','c']
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

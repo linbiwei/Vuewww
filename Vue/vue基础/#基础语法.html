@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+        <h1>{{linbiwei}}</h1>
+        <h2>{{lin}}</h2>
+        <ul>
+            <li v-for="item in lin">{{item}}</li>
+        </ul>
+        <!-- 文本 -->
+        <div>
+            <h3>{{add}}</h3>
+            <h3 v-once>{{add}} </h3> <!-- v-once 只执行一次 更改不在改变-->
+            <h3 v-pre>{{add}}</h3> <!--v-pre 原封不动显示{{add}}-->
+            <h3 v-text='add'></h3> <!-- v-text='add' 调用文本-->
+            <h3 v-html='url'></h3> <!-- v-html='url' 调用url数据 带标签展示-->
+            <button @click="jia">+</button>   <!-- @click="jia" 点击事件 调用methods 里的jia事件 -->
+            <button @click="jian">-</button>
+        </div>
+
+        <!-- 属性 -->
+        <div>
+            <img v-bind:src="imgurl" alt=""><!-- v-bind: 属性赋值 -->
+            <img :src="imgurl" alt=""><!-- v-bind: 简写 -->
+        </div>
+    </div>
+
+    <script src="../vue.js"></script>
+    <script>
+        const ojb = {
+            linbiwei: "nihao",
+            lin: ["lin", "bi", "wei"],
+            add: 0,
+            url:'<a href="www.baidu.com">百度一下</a>',
+            imgurl:'https://i0.hdslb.com/bfs/archive/b3c3651f1b1e8f28ff6fc48a1b53a8695f8af151.jpg@880w_388h_1c_95q'
+        };
+
+        new Vue({
+            el: "#d1",
+            data: ojb,
+            methods: {
+                jia: function () {
+                    if (this.add < 10) {
+                        this.add++;
+                    } else if ((this.add = 10)) {
+                        console.log("最大值");
+                    }
+                },
+                jian: function () {
+                    if (this.add > 0) {
+                        this.add--;
+                    } else if (this.add == 0) {
+                        console.log("最小值");
+                    }
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

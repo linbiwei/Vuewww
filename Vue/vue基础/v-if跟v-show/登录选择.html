@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+        <div v-if="a">
+            <label for="dd">邮箱</label>
+            <input type="text" name="" id="dd" key="dd">
+        </div>
+        <div v-else>
+            <label for="aa">手机号码</label>
+            <input type="text" name="" id="aa" key="aa">
+        </div>
+        <!-- input 加 key值 区分开来  值是唯一 ，加上这个才会重新创建一个input     -->
+        <button @click="a=!a"> 按钮</button>
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#d1',
+            data: {
+                a: true
+            }
+        })
+    </script>
+</body>
+
+</html>

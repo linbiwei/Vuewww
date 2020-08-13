@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <div class="lin" :class="{red:falseAA,add:trueAA}"> 你好</div>
+        <div class="lin" :class="classddd()"> 你好</div> <!-- 调用事件 方法卸载事件里 -->
+        <button @click='clickad'>按钮</button>
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#d1',
+            data: {
+                classA: 'red',
+                falseAA: false,
+                trueAA: true
+            },
+            methods: {
+                clickad: function () {
+                    this.falseAA = !this.falseAA
+                },
+                classddd: function () {
+                    return {
+                        red: this.falseAA,
+                        add: this.trueAA
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

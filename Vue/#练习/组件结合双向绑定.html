@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="d1">
+        <zi :za="fa" :zb="fb" @in11='fin11' @in22='fin22'></zi>
+    </div>
+
+    <template id="zi">
+        <div>
+            <h1>data:{{dataza}}</h1>
+            <h1> props: {{za}}</h1>
+            <input type="text" :value="dataza" @input="in1">
+            <h1>props:{{zb}}</h1>1
+            <h1>data:{{datazb}}</h1>
+            <input type="text" :value="datazb" @input="in2">
+
+        </div>
+    </template>
+    <script src="/Vue/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#d1',
+            data: {
+                fa: 1,
+                fb: 2
+            },
+            methods: {
+                fin11(a) {
+                    this.fa = a * 1
+                },
+                fin22(a) {
+                    this.fb = a * 1
+                }
+            },
+            components: {
+                zi: {
+                    template: '#zi',
+                    props: {
+                        za: Number,
+                        zb: Number
+                    },
+                    data() {
+                        return {
+                            dataza: this.za,
+                            datazb: this.zb
+                        }
+                    },
+                    methods: {
+                        in1(event) {
+                            this.dataza = event.target.value
+                            this.$emit('in11', this.dataza)
+                            this.datazb = this.dataza * 100
+                        },
+                        in2(event) {
+                            this.datazb = event.target.value
+                            this.$emit('in22', this.datazb)
+                            this.dataza = this.datazb / 100
+                        }
+                    }
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>

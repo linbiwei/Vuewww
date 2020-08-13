@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+        <!-- if 元素不会重建 -->
+        <h1 v-if="a==1"><input type="text" name="" id=""></h1>
+        <h2 v-else-if="a==2"><input type="text" name="" id=""></h2>
+        <h1 v-else><input type="text" name="" id=""></h1>
+
+        <!-- show创建出所有结果  只是隐藏-->
+        <h1 v-show="a==1">1</h1>
+        <h1 v-show="a==2">2</h1>
+        <h1 v-show="a==3">3</h1>
+        <button @click="a++"> 按钮</button>
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#d1',
+            data: {
+                a: 1
+            },
+            methods: {
+               
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+       <button v-on:click="but1">按钮</button>
+       <button @click="but1">简写</button>
+       <button @click="but1()">带括号</button>
+       <button @click="but2('qew')">传值</button>
+       <button @click="but3">event</button>
+       <button @click="but4('adad',$event)">event 加传值</button>
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        new Vue({
+            el:'#d1',
+            data :{
+               title:'你好'
+            },
+            methods: {
+                but1(){
+                    console.log('123');
+                },
+                but2(a){
+                    console.log('123',a);
+                },
+                but3(event){
+                    console.log('123',event);
+                },
+                but4(a,b){
+                    console.log(a,b);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

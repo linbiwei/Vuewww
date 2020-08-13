@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+        <aaa></aaa>
+    </div>
+
+    <!-- 分离模板  -->
+    <template id="lin">
+        <div>
+            <h1>{{title}}</h1>
+            <p>我是内容1</p>
+        </div>
+    </template>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        // 调用id
+        const app = new Vue({
+            el: "#d1",
+            components: {
+               "aaa":{
+                    template:'#lin',
+                    // 不能是对象 只能是函数
+                    data () {
+                        return {
+                            title:'nihao'
+                        }
+                    }
+               }
+            }
+        })
+    </script>
+</body>
+
+</html>

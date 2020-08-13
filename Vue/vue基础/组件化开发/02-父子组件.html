@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="d1">
+        <aaa></aaa>
+        <!-- <abc></abc> 这里就不能用 -->
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+
+        // 注册组件1
+        const zujian1 =Vue.extend({
+            template: `
+                <div>
+                    <h1>我是1</h1>
+                    <p>我是内容1</p>
+                </div>
+            `
+        })
+
+        // 注册组件2
+        const zujian2 =Vue.extend({
+            template: `
+                <div>
+                    <h1>我是2</h1>
+                    <p>我是内容2</p>
+                    <abc></abc>
+                </div>
+            `,
+             // 调用组件1  只能在  zujian2  里使用
+            components: {
+                abc:zujian1
+            }
+        })
+
+
+      const app = new Vue({
+          el:'#d1',
+         components: {
+            aaa:zujian2
+         }
+      })
+    </script>
+</body>
+
+</html>

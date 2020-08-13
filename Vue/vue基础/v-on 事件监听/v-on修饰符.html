@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  @click.once 只执行一次  -->
+    <div id="d1" @click.once="but">
+       <!-- @click.stop 阻止冒泡 点击按钮 不在执行外层div事件 -->
+       <button @click.stop="but1">按钮</button>
+        <br>
+       <!-- @click.prevent 阻止默认事件 form的提交-->
+       <!-- @click.prevent.stop 串联使用 -->
+       <form action="adad.php" method="get">
+           <button @click.prevent.stop="but2"> form 提交</button>
+           <button @click.prevent.stop>阻止不执行事件</button>
+       </form>
+       <br>
+      
+    </div>
+
+    <script src="/Vue/vue.js"></script>
+    <script>
+        new Vue({
+            el:'#d1',
+            data :{
+               title:'你好'
+            },
+            methods: {
+                but(){
+                    console.log('div');
+                },
+                but1(){
+                    console.log('bott1');
+                },
+                but2(){
+                    console.log('bott2');
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
