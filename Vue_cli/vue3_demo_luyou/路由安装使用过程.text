@@ -1,0 +1,8 @@
+额外安装路由
+    cnpm install vue-router --save
+
+
+1. src 文件夹下创建 router 文件夹 
+    创建index.js 文件
+        配置路由 ...(查看 src >> router >> index.js )
+            
