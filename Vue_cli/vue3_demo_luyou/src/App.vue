@@ -21,7 +21,7 @@
       <!-- <button @click="syclick"> 首页</button> -->
       <!-- <button  @click="gyclick"> 关于</button> -->
 
-
+  
       <!-- 显示位置 站位 -->
       <router-view></router-view>
   </div>
