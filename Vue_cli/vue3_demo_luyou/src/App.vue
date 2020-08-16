@@ -13,16 +13,22 @@
     <!-- <router-link to='/profile'>档案</router-link> -->
 
     <!--  路由传参  query -->
-    <!-- <router-link :to="{path:'/profile',query:{name:'linbiwei'}}">档案</router-link> -->
+    <router-link :to="{path:'/profile',query:{name:'linbiwei'}}">档案</router-link>
     <!--  -->
-    <button @click=" profileclick">档案</button>
+    <!-- <button @click=" profileclick">档案</button> -->
 
     <!-- 2. 通过点击代码跳转路由  -->
     <!-- <button @click="syclick"> 首页</button> -->
     <!-- <button  @click="gyclick"> 关于</button> -->
 
-    <!-- 显示位置 站位 -->
-    <router-view></router-view>
+    <!-- 显示位置 站位 
+     keep-alive 禁止路由切换组件被频繁销毁  
+        exclude=""  屏蔽组件的name 不被保护在keep-alive中 不会缓存
+        includ=""  匹配到的才会被缓存
+     -->
+    <keep-alive exclude="user,hone">
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 

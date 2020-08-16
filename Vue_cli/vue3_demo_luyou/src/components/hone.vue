@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
       <h1>
           我是主页
       </h1>
@@ -14,7 +14,7 @@
 <script>
 
 export default {
-  name: 'App',
+  name: 'hone',
  
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
       <h1>
           我是用户中心
       </h1>
@@ -13,7 +13,7 @@
 <script>
 
 export default {
-  name: 'App',
+  name: 'user',
  
 }
 </script>

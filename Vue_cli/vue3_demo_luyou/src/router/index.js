@@ -47,19 +47,42 @@ const routes = [
                 path: 'message',
                 component: Homemsess 
             },
-        ]
+        ],
+
+        // 给导航守卫定的标题
+        meta: { 
+            title:'首页'
+         }
     },
     {
         path: '/about',
-        component: About
+        component: About,
+        meta: { 
+            title:'关于'
+         },
+         //  路由独享守卫  执行这个路由跳转才触发
+        beforeEach:(to, from, next) => {
+            console.log('路由独享守卫')
+            next()
+        }
     },
     //  动态路由
     // user_id 可以被获取
     {
         path: '/user/:user_id',
-        component: User
+        component: User,
+        meta: { 
+            title:'用户'
+         }
     },
-    { path: '/profile', component:Profile  }
+    {
+        path: '/profile',
+        component:Profile,
+        meta: { 
+            title:'档案'
+         },
+        
+    }
 ]
 const router = new VueRouter({
     // 配置路由和组件之间的应用关系
@@ -69,6 +92,28 @@ const router = new VueRouter({
     // 更改默认选中class
     linkActiveClass: 'active'
 })
+
+
+// 导航守卫更改  document.title
+
+// 前置狗子  跳转前
+router.beforeEach((to, from, next) => {
+    console.log(' 前置狗子  跳转前')
+    // 存在嵌套路由 就要用 to.matched[0]
+    document.title= to.matched[0].meta.title
+    next()
+})
+
+// 后置钩子  跳转后
+router.afterEach( route => {
+    console.log('后置钩子 跳转后')
+})
+
+
+
+
+
+
 
 // 3.将 router 对象传入到 vue 实力
 export default router
