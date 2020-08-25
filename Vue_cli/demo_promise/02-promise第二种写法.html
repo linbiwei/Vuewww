@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 参数-》函数（resolve, reject)
+        new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                // resolve()
+                reject()
+                // 只调用 then 里面写两个函数 then(a ，b) resolve执行a  reject执行b
+            },1500);
+        }).then(()=>{
+            console.log('成功')
+        },()=>{
+            console.log('失败')
+        })
+
+    </script>
+</body>
+</html>

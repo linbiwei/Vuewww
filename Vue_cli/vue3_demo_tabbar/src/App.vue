@@ -7,18 +7,17 @@
 
 <script>
 // 注册组件
-import MainTabbar  from "./components/MainTabbar"
+import MainTabbar from "./components/MainTabbar";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     // 引用组件
-   MainTabbar
-  }
-}
+    MainTabbar,
+  },
+};
 </script>
 
 <style>
-  /* css 初始化 */
-  @import url("./assets/css/index.css");
- 
+/* css 初始化 */
+@import url("./assets/css/index.css");
 </style>

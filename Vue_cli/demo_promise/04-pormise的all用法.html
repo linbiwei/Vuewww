@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 合并两个请求  结果 会传到then 里 数组的形式 [0]就是第一个请求 [1]就是以第二请求
+        Promise.all([
+            new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    resolve('第一个请求')
+                },1500);
+            }),
+            new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    resolve('第二个请求')
+                },3000);
+            })
+            // data 会是数组的形式
+        ]).then( data => {
+            console.log(data)
+        })
+
+    </script>
+</body>
+</html>

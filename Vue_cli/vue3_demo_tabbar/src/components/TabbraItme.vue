@@ -6,7 +6,9 @@
     <div v-else>
       <slot name="itme-img-active"></slot>
     </div>
-    <div :style="Color"> <slot name="itme-text"></slot></div>
+    <div :style="Color">
+      <slot name="itme-text"></slot>
+    </div>
   </div>
 </template>
 
@@ -14,29 +16,33 @@
 export default {
   name: "tab-bar-itme",
   props: {
-      path:String,
-      activeColor:{
-          type:String,
-        //   default 没传 默认
-          default:'red'
-      }
+    path: String,
+    activeColor: {
+      type: String,
+      //   default 没传 默认
+      default: "red",
+    },
   },
   data() {
     return {
-    //   isActive: true,
+     
     };
   },
-   computed: {
-        isActive(){
-            return this.$route.path.indexOf(this.path) !==-1
-        },
-        Color(){
-            return this.isActive ? {color:this.activeColor}:{}
-        }
+  computed: {
+    isActive() {
+      return this.$route.path.indexOf(this.path) !== -1;
     },
+    Color() {
+      return this.isActive
+        ? { color: this.activeColor, "font-weight": "bold" }
+        : {};
+    },
+  },
   methods: {
     tabbarclick() {
-      this.$router.replace(this.path)
+      if (this.$route.path.indexOf(this.path) == -1) {
+        this.$router.replace(this.path);
+      }
     },
   },
 };
@@ -53,5 +59,4 @@ export default {
   width: 25px;
   margin: 5px auto 0;
 }
-
 </style>
