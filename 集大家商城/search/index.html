@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索</title>
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <link type="text/css" rel="stylesheet" href="../style/css/common.css">
+    <script type="text/javascript" src="../style/js/jquery_v3.4.1.min.js"></script>
+    <script type="text/javascript" src="../style/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="../style/js/flexible.js"></script>
+    <script type="text/javascript" src="../style/js/common.js"></script>
+    <script type="text/javascript" src="../style/js/search.js"></script>
+
+</head>
+
+<body>
+    <div class="main search-index">
+        <!-- 跟随的顶部 -->
+        <div class="header-box mobile-hide">
+            <!-- 移动 -->
+           <div class="header-mobile">
+                <div class="header-top ">
+                    <a href="" class="classify">
+                        <img src="../style/img/157199320847433454.png" alt="">
+                    </a>
+                    <a href="JavaScript:;" class="logo">
+                        <img src="../style/img/heade-rlogo.png" alt="">
+                    </a>
+                    <a href="" class="logbtn">
+                        <!-- <img src="../style/img/157199321817918653.png" alt="登录"> -->
+                        <img src="../style/img/157199322108277118.png" alt="个人中心">
+                    </a>
+                </div>
+                <!-- 搜索 -->
+                <div class="header-boo">
+                    <div class="header-search">
+                        <a class="search" href=""></a>
+                        <i class="search-icon"></i>
+                        <input class="searchInput" name="" type="text" placeholder="418火爆开抢 满千减百" autocomplete="off">
+                    </div>
+                </div>
+           </div>
+
+           <!-- pc -->
+           <div class="header-computer">
+                <div class="header-computer-img">
+                    <a href="/">
+                        <img src="../style/img/heade-rlogo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-computer-list">
+                    <ul>
+                        <li>
+                            <a href="">首页</a>
+                        </li>
+                        <li>
+                            <a href="">分类导航</a>
+                        </li>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">购物车</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-personage">
+                    <a href="" class="logbtn">
+                        <img src="../style/img/157199321817918653.png" alt="登录">
+                        <!-- <img src="../style/img/157199322108277118.png" alt="个人中心"> -->
+                    </a>
+                </div>
+                <div class="navbar-form">
+                    <form id="navbar_search"method="get" action="">
+                        <div class="form-group">
+                            <button type="submit">
+                                <i class="icon-font"></i>
+                            </button>
+                            <input type="text" class="form-control"autocomplete="off" id="search-kw" name="kw" value="" placeholder="搜索...">
+                        </div>
+                    </form>
+                </div>
+                
+           </div>
+        </div>
+        <div class="seek-top pc-search">
+            <a href="JavaScript:;" onclick="window.history.go(-1)" class="return"></a>
+            <div class="seek_input box-sw">
+                <i class="search-icon"></i>
+                <i class="search-shut"></i>
+                <input class="searchInput" name="search" type="text" placeholder="418火爆开抢 满千减百" autocomplete="off">
+            </div>
+            <button type="submit" id="submit">搜索</button>
+        </div>
+
+        <!-- 最新搜索 -->
+        <div class="seek_record" id="seek_record" style="display: none;">
+            <div class="seek_record_tit">
+                <p>最近搜索</p> <i></i>
+            </div>
+            <ul> </ul>
+        </div>
+
+        <!-- 热门搜索 -->
+        <div class="seek_record seek_hot" id="seek_hot">
+            <div class="seek_record_tit">
+                <p>热门搜索</p> 
+                <!-- <span>隐藏</span>  -->
+            </div>
+            <ul>
+                <li key="mis ">mis </li>
+                <li key="R5 3600x">R5 3600x</li>
+                <li key="mis 微星b450m max">mis 微星b450m max</li>
+                <li key="机械硬盘 固态硬盘">机械硬盘 固态硬盘</li>
+                <li key="温奶器">温奶器</li>
+                <li key="显卡支架">显卡支架</li>
+                <li key="2060s显卡">2060s显卡</li>
+                <li key="三星mr2.0 970">三星mr2.0 970</li>
+                <li key="144hz ips 显示器">144hz ips 显示器</li>
+            </ul>
+        </div>
+
+        <!-- 搜索提示 -->
+        <div class="hint" id="hint" style="display: none;">
+            <ul> </ul>
+        </div>
+
+        <!-- 底部跟随 -->
+        <div class="commonNav box-sw">
+            <a href="../index/index.html" class="nNav_home">
+                <i></i> <span>首页</span>
+            </a>
+            <a href="JavaScript:;" class="nNav_seek  on">
+                <i></i><span>搜索</span>
+            </a>
+            <a href="../list/index.html" class="nNav_classify ">
+                <i></i>  <span>分类</span>
+            </a>
+            <a href="../shopping_cart/index.html" class="nNav_shopping ">
+                <i></i> <span>购物车</span>
+            </a>
+            <a href="../my/index.html" class="nNav_wode">
+                <i></i> <span>我的</span>
+            </a>
+        </div>
+        
+    </div>
+</body>
+
+</html>

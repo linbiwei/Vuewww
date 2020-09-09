@@ -1,0 +1,31 @@
+{
+    "user-id": "123456",
+    "data": [{
+            "addressId": 1,
+            "name": "林碧威",
+            "phone": 15710680950,
+            "area": "福建省厦门市集美区全区",
+            "address": "杏林社区 邻家公寓 303",
+            "edit": "公司",
+            "defaultoff": true
+        },
+        {
+            "addressId": 2,
+            "name": "林俊杰",
+            "phone": 15719416154,
+            "area": "福建省厦门市翔安区全区",
+            "address": "马垅社区 118号 308",
+            "edit": "家",
+            "defaultoff": false
+        },
+        {
+            "addressId": 3,
+            "name": "郭芙蓉",
+            "phone": 15710680950,
+            "area": "福建省厦门市思明区",
+            "address": "观音山 发财大夏 1103",
+            "edit": "",
+            "defaultoff": false
+        }
+    ]
+}

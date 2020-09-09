@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <link type="text/css" rel="stylesheet" href="../style/css/common.css">
+    <link type="text/css" rel="stylesheet" href="../style/css/swiper.min.css">
+    <script type="text/javascript" src="../style/js/jquery_v3.4.1.min.js"></script>
+    <script type="text/javascript" src="../style/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="../style/js/flexible.js"></script>
+    <script type="text/javascript" src="../style/js/MagnifierF.js"></script>
+    <script type="text/javascript" src="../style/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../style/js/Content_page.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- 跟随的顶部 -->
+        <div class="header-box mobile-hide">
+            <!-- pc -->
+            <div class="header-computer">
+                <div class="header-computer-img">
+                    <a href="/">
+                        <img src="../style/img/heade-rlogo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-computer-list">
+                    <ul>
+                        <li>
+                            <a href="">首页</a>
+                        </li>
+                        <li>
+                            <a href="">分类导航</a>
+                        </li>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">购物车</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-personage">
+                    <a href="" class="logbtn">
+                        <img src="../style/img/157199321817918653.png" alt="登录">
+                        <!-- <img src="../style/img/157199322108277118.png" alt="个人中心"> -->
+                    </a>
+                </div>
+                <div class="navbar-form">
+                    <form id="navbar_search" method="get" action="">
+                        <div class="form-group">
+                            <button type="submit">
+                                <i class="icon-font"></i>
+                            </button>
+                            <input type="text" class="form-control" autocomplete="off" id="search-kw" name="kw" value=""
+                                placeholder="搜索...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="Content_page_box">
+            <!--移动头部 -->
+            <div class="seek-top on">
+                <a href="JavaScript:;" onclick="window.history.go(-1)" class="return"></a>
+                <div class="Hidden-surprise">
+                    <ul>
+                        <li class="on">商品</li>
+                        <li>评价</li>
+                        <li>推荐</li>
+                        <li>详情</li>
+                    </ul>
+                </div>
+                <span title="三星（SAMSUNG）23.8英寸 爱眼不闪屏滤蓝光 可壁挂 FreeSync 液晶电脑显示器 S24R352FHC（HDMI接口）" class="hidden">商品详情</span>
+                <div class="msShortcutMenu">
+                    <ul>
+                        <li class="Menu-Home">
+                            <a href="">首页</a>
+                        </li>
+                        <li class="Menu-seeklist">
+                            <a href="">搜索</a>
+                        </li>
+                        <li class="Menu-ka">
+                            <a href="">购物车</a>
+                        </li>
+                        <li class="Menu-wode">
+                            <a href="">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 产品展示 价格 -->
+            <div class="product-show">
+                <!-- 产品 图片 -->
+                <div class="Product-pictures ">
+                    <!-- pc 端放大镜 -->
+                    <div id="MagnifierWrap2" class="hidden">
+                        <div class="MagnifierMain">
+                            <img class="MagTargetImg" src="//img13.360buyimg.com/n1/s450x450_jfs/t1/55423/12/6729/534628/5d47c40bEdf23266a/7db2dd280f809ba2.jpg" data-src="https://img13.360buyimg.com//n0/jfs/t1/55423/12/6729/534628/5d47c40bEdf23266a/7db2dd280f809ba2.jpg">
+                        </div>
+                        <span class="spe_leftBtn">&lt;</span>
+                        <span class="spe_rightBtn">&gt;</span>
+                        <div class="spec-items">
+                            <ul>
+                                <!-- 一张比一张清晰 -->
+                                <!-- scr=li展示小图 >>> data-lsrc=上面那个大张图 >>> data-maxSrc=放大镜的大图  -->
+                                <li class="on">
+                                    <img src="https://img13.360buyimg.com/n5/s54x54_jfs/t1/55423/12/6729/534628/5d47c40bEdf23266a/7db2dd280f809ba2.jpg" data-lsrc="//img13.360buyimg.com/n1/s450x450_jfs/t1/55423/12/6729/534628/5d47c40bEdf23266a/7db2dd280f809ba2.jpg" data-maxSrc="https://img13.360buyimg.com//n0/jfs/t1/55423/12/6729/534628/5d47c40bEdf23266a/7db2dd280f809ba2.jpg">
+                                </li>
+                                <li>
+                                    <img src="//img13.360buyimg.com/n5/s54x54_jfs/t1/42120/27/11029/539175/5d47c40bEec61397a/ca75c4803bdd9174.jpg" data-lsrc="//img13.360buyimg.com/n1/s450x450_jfs/t1/42120/27/11029/539175/5d47c40bEec61397a/ca75c4803bdd9174.jpg" data-maxSrc="//img13.360buyimg.com//n0/jfs/t1/42120/27/11029/539175/5d47c40bEec61397a/ca75c4803bdd9174.jpg"></li>
+                                <li>
+                                    <img src="//img13.360buyimg.com/n5/s54x54_jfs/t1/83735/21/6200/58808/5d43fcfeE002596bb/8bf948dc2641a464.jpg" data-lsrc="//img13.360buyimg.com/n1/s450x450_jfs/t1/83735/21/6200/58808/5d43fcfeE002596bb/8bf948dc2641a464.jpg" data-maxSrc="//img13.360buyimg.com//n0/jfs/t1/83735/21/6200/58808/5d43fcfeE002596bb/8bf948dc2641a464.jpg">
+                                </li>
+                                <li>
+                                    <img src="//imgservice.suning.cn/uimg1/b2c/image/GLAVtLaE2xsfvDq74WTDOQ.png_60w_60h_4e" data-lsrc="//imgservice.suning.cn/uimg1/b2c/image/GLAVtLaE2xsfvDq74WTDOQ.png_800w_800h_4e" data-maxSrc="//imgservice.suning.cn/uimg1/b2c/image/GLAVtLaE2xsfvDq74WTDOQ.png_800w_800h_4e"> 
+                                </li>
+                                <li>
+                                    <img src="//img13.360buyimg.com/n5/s54x54_jfs/t1/75535/39/6522/168784/5d4912a2E63a57fda/308920bfe29a4e03.jpg" data-lsrc="//img13.360buyimg.com/n1/s450x450_jfs/t1/75535/39/6522/168784/5d4912a2E63a57fda/308920bfe29a4e03.jpg" data-maxSrc="//img13.360buyimg.com//n0/jfs/t1/75535/39/6522/168784/5d4912a2E63a57fda/308920bfe29a4e03.jpg">
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 移动端的图片 -->
+                    <div class="Product-swiper">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="//imgservice.suning.cn/uimg1/b2c/image/9I-OVgvauzjL1hyMeq-UQw.jpg_800w_800h_4e_100Q" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="//imgservice.suning.cn/uimg1/b2c/image/HNN2FzKtfQBhjAn7HMeigQ.jpg_800w_800h_4e_100Q" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="//imgservice.suning.cn/uimg1/b2c/image/ryUhuvhIcMxMeEjzmjvGOQ.jpg_800w_800h_4e_100Q" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="//imgservice.suning.cn/uimg1/b2c/image/XsApMlMLNGdVNGIl0xtpPw.jpg_800w_800h_4e_100Q" alt="">
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品价格 套餐 -->
+                <div class="Product-information">
+                    <!-- 标题 -->
+                    <div class="sku-name"> 
+                        <p>三星（SAMSUNG）23.8英寸 爱眼不闪屏滤蓝光 可壁挂 FreeSync 液晶电脑显示器 </p>
+                        <div class="favourite"> 
+                            <!-- 已关注 -->
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAA3lBMVEUAAABoaGhubm5oaGhnZ2dnZ2dmZmZpaWlmZmZnZ2dnZ2doaGhnZ2doaGhnZ2dnZ2dnZ2dqampnZ2dmZmZnZ2eEhIRnZ2dnZ2dpaWlnZ2doaGj/2ABmZmZmZmZnZ2dnZ2f/ywBnZ2dmZmb/ywBnZ2dmZmb/zAD/zABnZ2doaGj/ywD/1AD/ygD/ygD/yQBmZmZnZ2dmZmb/ygBmZmb/ywBnZ2f/zAD/ygD/zAD/ywD/yQD/ywBmZmb/ywD/yQD/yQD/ywD/ywD/yQD/yQD/ywD/zAD/zwD/yQD/yQBmZmYNXtNtAAAASHRSTlMADwlHHRn2OOtcuFFXTLSooxW+dSMEl4ouaSkE++PK/fPCrJiSMi8V02JWDsC6tZ2DcVrYnXxfRj04Hvjv7uje2syKb2dNHJx0OhpFAAACNUlEQVRIx+zTSwqDMBCA4dzDjRCIkNdCxCe+rZ37n6i1NC6MIWPclf67LL5FZhjyg0VFEQVbDaBD9Qzv5jBbxxuO6yCs4ZMOsRy+8etWdAZ34iJdcwl7Ml/RMOF0gEMD5QmGKnCk/PwJzjIvVm6svDh145R4oy5LMecgz62MUKvqz2yfEFQstm3MCLJH0LBMNmZoK2xcoXF9BzMbl2hc2rggN6bN0Tg1y80ys/IcjSvYGhdBiFhG82dsU9NSto+Pts1ELhQdn/9e7ZLLroIwEEAL8laRIkUgPCKBBFZgjDt/oP//Q7fTSXkoNyzv5p7FzFjnkM6k/2yga5gzm3xgR3PTYUVLENb5WHgdZrM8E+QZTLLJVwgFcXkPqYUEaHX1wCrNqWpixpISZMR/GyLWBVMHDx7LWndcsskdZZokyaE8i1DFoqRE0o+GBeQy1nCUDPRLfvAVKdwQurQrYN0hHqHxzKMv2bQlZYkZvLjIVJNzw7wtK3ADatuOvSX7lwlnJRcxmdE9K9uQ797MiA8EyW8aosvTdOfaSMM/aNQ/aSjIC4jGL3J7kvh5fsGqRTMlbiCwOojmhkzZNKQTxIWONf6O967ddKq65pFpLVbW82xPrkP1Gishnqq58RluLSxbys9BJtbwgcGc3DNU3/FbNnlDdYWW8l4+w4K/iOTgvF8UirBgRDMBJ5aJyYvyJZ1Y0WhVtT1tMKhg8ha+NvAFlACROyNHcJvVGrJgFOEimtvjAkb+jB+6SradNIjVzAAAAABJRU5ErkJggg==" alt="">
+                            <!-- 未关注 -->
+                            <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAhFBMVEUAAABmZmZpaWlmZmZoaGhnZ2dra2toaGh0dHRmZmZnZ2doaGhpaWlnZ2dmZmZ2dnZnZ2dnZ2dmZmZqampmZmZnZ2dnZ2dmZmZnZ2dnZ2dmZmZnZ2dmZmZoaGhnZ2dmZmZmZmZmZmZnZ2doaGhnZ2dnZ2dnZ2doaGhmZmZpaWlmZmZmZmajHyRjAAAAK3RSTlMA9g78GFcTOAS3pFEtvewIlop1HeJb8p9pMtmZeU1H6cmtgSZiznBBwTuPDzkIqwAAAi9JREFUSMftltuSojAQhgnhLAjKGREBz/u///ttQkoWmXJsudqamu+iO2n9tdPpELQfiNM0zmKxC7hLtRcILsu0cYaqQhYvTfp6XZi4CeSalgPm51rrgIP1cJ8RpwGQylEKBCl93Ya5q4BxsS4E1c40KOm6GMhyXQX0PMNA8D79HQDm1rYzaTS7dhlk/d4RAKYQznFMyqalQBt+DYetLCAlb+9r1AN2lKN0A+p5sAZuDqk9EvD9c2jPkRBbxc9mx8ESAV8jsp8l7stUyHD02pRrSdfqwFZbSgycnmto0cU+sFKtESotY3T1FbgK13Scd40Y2IBw9GqXcZ9gIOljn/44Uf3NAbA8ZwD4TdaAig3JudBF4YszJHeNzIato3Fry2jNNh9dNPPpL7+MhLryR1ubcT++7azz43qrlDfavaaoPMKBOklXSifRO35Ro4Jbb9VdFkubjO28RaQWtE6/FVq+7zftXhgeiaGloqc+ZhI+2O71u9MThSyCIXPfSthN2tUrsWEPnM/KS90uGYu8Jh3q1p38Xru2PxInu+nGu8yniEN9wOIbXREO0YL0zxFmRI9PikDAE2njF+LSHHA599SoVMpCSz0Bq6Q1vu/ugxcl4XQe0Qu25UeDRdrICT5ZfOGi1ib/98UqoG6VEyF35Drhxo97a0UTW3WCXg2bQ1YPvR2II6IbknU0uBfanvHuPraWx+XKS9TypXuC9eIs/zlOp8e8F0buTbma8F9cPX8BRTk4ibXjWXIAAAAASUVORK5CYII=" alt=""> -->
+                        </div>
+                    </div>
+                    <!-- pc-价格 -->
+                    <div class="pc-price">
+                        <div class="pc-price-top"> 价格 <span><em>￥</em>1289.00</span> <p style="font-size: .3rem;">邮费 <span><em>￥</em>10.00</span> </p> </div>
+                        <div class="pc-price-bot"> <p>累计评价</p> <span>500+</span> </div>
+                    </div>
+
+                    <!-- 颜色版本 -->
+                    <div class="version-box">
+                        <div class="version">
+                            <div class="version-tit">颜色</div>
+                            <ul class="version-list">
+                                <li>
+                                    <img src="//imgservice.suning.cn/uimg1/b2c/image/GLAVtLaE2xsfvDq74WTDOQ.png_60w_60h_4e" alt="">
+                                    <span>亮黑色</span>
+                                </li>
+                                <li>
+                                    <img src="//imgservice.suning.cn/uimg1/b2c/image/7grJWwNKOhcCC7hOKA-shQ.png_60w_60h_4e" alt="">
+                                    <span>星河银</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="version">
+                                <div class="version-tit">版本</div>
+                                <ul class="version-list">
+                                    <li class="on">
+                                        <span>4G版(6GB+128GB)</span>
+                                    </li>
+                                    <li>
+                                        <span>4G版(6GB+128GB)</span>
+                                    </li>
+                                    <li>
+                                        <span>5G版(8GB+128GB)</span>
+                                    </li>
+                                    <li>
+                                        <span>55G版(8GB+256GB)</span>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <!-- 数量 -->
+                    <div class="version-number">
+                        <div class="version">
+                            <div class="version-tit">数量</div>
+                            <div>
+                                <div class="counter"> 
+                                    <span class="gray-reduce"></span>
+                                    <input max="99" min="1" type="text" value="1">
+                                    <span class="black-add"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 操作 -->
+                    <div class="Product-but hidden">
+                        <button class="immediately">立即购买 </button>
+                        <button class="shoppingcart"> 加入购物车 </button>
+                    </div>
+                </div>
+              
+            </div>
+
+            <!-- 悬浮加入购物车 立即购买 -->
+            <div class="suspension">
+                <div class="ggwc">
+                    <img src="../style/img/ggwc.png" alt="">
+                </div>
+                <div class="suspension-but">
+                    <button class="lji">加入购物车</button>
+                    <button class="gmai">立即购买</button>
+                </div>
+            </div>
+
+            <!--  评价 -->
+            <div class="Content_page-evaluation" id="Content_pagetit">
+                <div class="Content_pagetit">
+                    <span>评价</span>
+                    <a href="全部评价.html"> 查看全部</a>
+                </div>
+                <div class="Content_page-evaluation-list">
+                    <!--  -->
+                    <div class="Content_page-evaluation-list-div">
+                        <div class="Content_page-evaluation-top">
+                            <div class="Content_page-evaluation-yonhu">
+                                <div>
+                                    <img src="//img11.360buyimg.com/jdphoto/s40x40_jfs/t1/25255/18/10701/1678/5c89f892E78c04688/684d63c0d68e39b1.png" alt="">
+                                </div>
+                                <span> 1598&*****111</span>
+                            </div>
+                            <div class="Content_page-evaluation-sjain">
+                                <span>2020-07-03</span>
+                            </div>
+                        </div>
+                        <div class="Content_page-evaluation-bot">
+                            <div class="Content_page-evaluation-bot-text">
+                                京东送货速度就是快，风雨无阻，晚上下单，一早就派送。这款毛笔，一套大中小，可以满足基本的练字需要，家里备一套，很方便，毛笔书写顺畅，要求不高的可以考虑这款，简单包装，够环保，手感舒服轻便，没事在家练练字，颐养性情
+                            </div>
+                            <div class="Content_page-evaluation-bot-img">
+                                <!-- 4张 -->
+                                <ul>
+                                    <li>
+                                        <img src="//image4.suning.cn/uimg/ZR/share_order/159228368644740447_100x100.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="//image4.suning.cn/uimg/ZR/share_order/159228368783401616_100x100.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="//image4.suning.cn/uimg/ZR/share_order/159228368851856689_100x100.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="//image4.suning.cn/uimg/ZR/share_order/159228368783401616_100x100.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!--  -->
+                     <div class="Content_page-evaluation-list-div">
+                        <div class="Content_page-evaluation-top">
+                            <div class="Content_page-evaluation-yonhu">
+                                <div>
+                                    <img src="//img11.360buyimg.com/jdphoto/s40x40_jfs/t1/25255/18/10701/1678/5c89f892E78c04688/684d63c0d68e39b1.png" alt="">
+                                </div>
+                                <span> 1598&*****111</span>
+                            </div>
+                            <div class="Content_page-evaluation-sjain">
+                                <span>2020-07-03</span>
+                            </div>
+                        </div>
+                        <div class="Content_page-evaluation-bot">
+                            <div class="Content_page-evaluation-bot-text">
+                                京东送货速度就是快，风雨无阻，晚上下单，一早就派送。这款毛笔，一套大中小，可以满足基本的练字需要，家里备一套，很方便，毛笔书写顺畅，要求不高的可以考虑这款，简单包装，够环保，手感舒服轻便，没事在家练练字，颐养性情
+                            </div>
+                            <div class="Content_page-evaluation-bot-img">
+                                <!-- 4张 -->
+                                <ul>
+                                    <li>
+                                        <img src="//gw.alicdn.com/bao/uploaded/i3/TB11vFubKEJL1JjSZFGYXG6OXXa_M2.SS2_500x500q90.jpg_.webp" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="To-view">
+                    <a href="全部评价.html"> 查看全部评价</a>
+                </div>
+            </div>
+
+            <!-- 猜你喜欢 -->
+            <div class="daily box-back_ ">
+                <div class="daily-tit">
+                    <h3>猜你喜欢</h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i2/113270314/O1CN015CEGEL1EBqwrzqGN4_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i4/113270314/O1CN01qu4fUu1EBqxDIfdmh_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i2/123327079/O1CN01McNjyn22AEEdYj0va_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i4/32065795/O1CN01pHuaB11sg9nU9uDSK_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i2/113270314/O1CN015CEGEL1EBqwrzqGN4_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i4/32065795/O1CN01pHuaB11sg9nU9uDSK_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i2/113270314/O1CN015CEGEL1EBqwrzqGN4_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i4/113270314/O1CN01qu4fUu1EBqxDIfdmh_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i2/123327079/O1CN01McNjyn22AEEdYj0va_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="//img.alicdn.com/img/i4/32065795/O1CN01pHuaB11sg9nU9uDSK_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                            <p>匠心品质</p>
+                            <p class="money"><span>¥ </span>250</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 详情 -->
+            <div class="goods-details">
+                <div class="goods-details-tit">
+                    <div class="on">商品介绍</div>
+                    <div>商品参数</div>
+                </div>
+               <div class="goods-details-nr">
+                    <!-- 图片 -->
+                    <div class="jies-tp  on" ><img src="//img30.360buyimg.com/sku/jfs/t1/26426/34/6360/60418/5c50032cE1b32d319/7a1877f9cb6c37aa.jpg!q70.dpg.webp" width="750" height="639" title="970 EVO详情图_r1_c1.jpg" alt="970 EVO详情图_r1_c1.jpg" loaded="8"> <img src="//img20.360buyimg.com/vc/jfs/t18943/30/1954798583/91534/63a6d8a0/5ae187afN72861bcb.jpg!q70.dpg.webp" alt="" loaded="7"> <img src="//img20.360buyimg.com/vc/jfs/t19783/280/2021266565/60423/9977d7b1/5ae187acN79a63c74.jpg!q70.dpg.webp" alt="" loaded="6"> <img src="//img20.360buyimg.com/vc/jfs/t19522/105/1984217595/121253/9381f9b/5ae187afNaa488b7d.jpg!q70.dpg.webp" alt="" loaded="5"> <img src="//img20.360buyimg.com/vc/jfs/t17512/232/2018834137/78592/9f8de998/5ae187b0N5a3038dd.jpg!q70.dpg.webp" alt="" loaded="4"> </div>
+                    <!-- 参数 -->
+                    <div class="parameter">
+                        <!--  -->
+                        <div class="parameter-list">
+                            <span class="parameter-tit"> 主体</span>
+                            <ul class="parameter-ul">
+                                <li>
+                                    <div>型号</div>
+                                    <div>36005</div>
+                                </li>
+                                <li>
+                                    <div>笔类类型</div>
+                                    <div>毛笔</div>
+                                </li>
+                                <li>
+                                    <div>笔芯颜色</div>
+                                    <div>黑色</div>
+                                </li>
+                                <li>
+                                    <div>产地</div>
+                                    <div>中国浙江宁波市</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <div class="parameter-list">
+                            <span class="parameter-tit">功能</span>
+                            <ul class="parameter-ul">
+                                <li>
+                                    <div>笔尖粗细</div>
+                                    <div>>0.7mm</div>
+                                </li>
+                                <li>
+                                    <div>打开方式</div>
+                                    <div>其他</div>
+                                </li>
+                                <li>
+                                    <div>书写粗细</div>
+                                    <div>粗</div>
+                                </li>
+                                <li>
+                                    <div>是否可擦</div>
+                                    <div>不可擦</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+         <!-- 尾巴 -->
+         <div class="footer">
+            <div class="footer-list">
+                <a href="" style="background: #00bcd5; color: #fff;">App下载</a>
+                <a href="">登录</a>
+                <a href="">注册</a>
+            </div>
+            <p>Copyright © 2004-2019 toptap.com 版权所有</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

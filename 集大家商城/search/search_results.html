@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xxx -搜索内容</title>
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <link type="text/css" rel="stylesheet" href="../style/css/common.css">
+    <script type="text/javascript" src="../style/js/jquery_v3.4.1.min.js"></script>
+    <script type="text/javascript" src="../style/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="../style/js//jquery.masonry.min.js"></script>
+    <script type="text/javascript" src="../style/js/flexible.js"></script>
+    <script type="text/javascript" src="../style/js/common.js"></script>
+    <script type="text/javascript" src="../style/js/search_results.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="search_wrap search_wrap_ban">
+            <div class=" search_resu_pc">
+                <div class="search_mask_laye"></div>
+                    <div class="seek-top on">
+                        <a href="JavaScript:;" onclick="window.history.go(-1)" class="return"></a>
+                        <a href="index.html" class="seek_box_a">
+                            <div class="seek_input box-sw">
+                                <i class="search-icon"></i>
+                                <input class="searchInput" name="search" type="text" placeholder="华硕猛禽2080Ti"
+                                    autocomplete="off">
+                            </div>
+                        </a>
+                        <div class="msShortcutMenu">
+                            <ul>
+                                <li class="Menu-Home">
+                                    <a href="../index/index.html">首页</a>
+                                </li>
+                                <li class="Menu-seeklist">
+                                    <a href="../list/index.html">分类搜索</a>
+                                </li>
+                                <li class="Menu-ka">
+                                    <a href="../shopping_cart/index.html">购物车</a>
+                                </li>
+                                <li class="Menu-wode">
+                                    <a href="">个人中心</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pro_filter">
+                        <!-- on 选中 -->
+                        <div class="pro_The_sorting"> <span>综合 <i></i></span></div>
+                        <div class="pro_sales"><span>销量</span> </div>
+                        <!--  ons 上  onx 下 -->
+                        <div class="pro_service ons"> <span>价格 <i class="one"></i> <i class="two"></i> </span> </div>
+                        <div class="pro_view toggle-button"></div>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="logo_bak"></div>
+        <div class="waterfull " id="waterfull">
+            <ul>
+                
+            </ul>
+            <div class=" load_more on" style="opacity: 0;">
+                <span> 正在加载... </span>
+            </div>
+            <!-- 尾巴 -->
+            <div class="footer " style="display: none;">
+                <div class="footer-list">
+                    <a href="" style="background: #00bcd5; color: #fff;">App下载</a>
+                    <a href="">登录</a>
+                    <a href="">注册</a>
+                </div>
+                <p>Copyright © 2004-2019 toptap.com 版权所有</p>
+            </div>
+        </div>
+
+        <!-- 返回顶部 -->
+        <div id="Top" onclick="$(window).scrollTop(0);" class="" ></div>
+
+    </div>
+</body>
+
+</html>

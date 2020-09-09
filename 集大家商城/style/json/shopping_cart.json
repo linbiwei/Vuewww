@@ -1,0 +1,84 @@
+{
+    "user-id": "123456",
+    "data": [{
+            "ProductId":13453, 
+            "State":false,
+            "arrivalQty": 1,
+            "MostPrompt":true,
+            "max":3,
+            "min":1,
+            "ProductInformation":[{
+                "cmmdtyUrl": "",
+                "cmmdtyName": "北欧表情NORHOR/N.U.新都市实木复古墨尔本布艺软包双人床1.8米K",
+                "cmmdtyImg": "//gw.alicdn.com/bao/uploaded/i3/TB11vFubKEJL1JjSZFGYXG6OXXa_M2.SS2_500x500q90.jpg_.webp",
+                "SalesPrice": 150.33,
+                "parameter":[]
+            }]
+        },
+        {
+            "ProductId":123124,
+            "State":true,
+            "arrivalQty": 2,
+            "MostPrompt":true,
+            "max":99,
+            "min":2,
+            "ProductInformation":[{
+                "cmmdtyUrl": "",
+                "cmmdtyName": "包邮进口Chabatree无铅玻璃木柄酱汁杯蜂蜜牛奶零食碗迷你蘸酱碗",
+                "cmmdtyImg": "//gw.alicdn.com/bao/uploaded/i3/23739472/TB2amDXaBAOyuJjy0FlXXcaxFXa_!!23739472.jpg_500x500q90.jpg_.webp",
+                "SalesPrice": 4894,
+                "parameter":[
+                    "颜色:天空之境",
+                    "版本:P30 8GB+128GB"
+                ]
+            }]
+        }, 
+        {
+            "ProductId":1,
+            "State":true,
+            "arrivalQty": 3,
+            "MostPrompt":false,
+            "max":99,
+            "min":1,
+            "ProductInformation":[{
+                "cmmdtyUrl": "",
+                "cmmdtyName": "特惠北欧表情/N.U.新都市实木家具墨尔本两抽床头柜角几边几多款T",
+                "cmmdtyImg": "//img.alicdn.com/imgextra/i4/906408620/O1CN0164vm8j2DY0gGZQuVg_!!906408620.jpg_640x640q80_.webp",
+                "SalesPrice": 200,
+                "parameter":[]
+            }]
+        },
+        {
+            "ProductId":112,
+            "State":true,
+            "arrivalQty": 4,
+            "MostPrompt":false,
+            "max":99,
+            "min":1,
+            "ProductInformation":[{
+                "cmmdtyUrl": "",
+                "cmmdtyName": "客厅沙发后置物架实木长条窄桌床头家用沙发边落地靠墙储物架简约",
+                "cmmdtyImg": "//img.alicdn.com/imgextra/i1/2883547872/O1CN011wAoiD281QOy7HLEj_!!2883547872.jpg_640x640q80_.webp",
+                "SalesPrice": 2999.33,
+                "parameter":[]
+            }]
+        },
+        {
+            "ProductId":123,
+            "State":true,
+            "arrivalQty": 99,
+            "MostPrompt":false,
+            "max":99,
+            "min":1,
+            "ProductInformation":[{
+                "cmmdtyUrl": "",
+                "cmmdtyName": "进口80支埃及长绒棉贡缎四件套 纯白绣花五星级床上用品包邮",
+                "cmmdtyImg": "//img.alicdn.com/imgextra/i2/2091511816/O1CN01NFpTNV1PHlqOwpdns_!!2091511816.jpg_2200x2200Q50s50.jpg_.webp",
+                "SalesPrice": 992,
+                "parameter":[]
+            }]
+        }
+    ]
+}
+
+

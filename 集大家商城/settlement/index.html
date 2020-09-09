@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>确认订单</title>
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <!-- 用户id -->
+    <meta name="user-id " id="user-id" content="123465" />
+    <link type="text/css" rel="stylesheet" href="../style/css/common.css">
+    <script type="text/javascript" src="../style/js/jquery_v3.4.1.min.js"></script>
+    <script type="text/javascript" src="../style/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="../style/js/flexible.js"></script>
+    <script type="text/javascript" src="../style/js/common.js"></script>
+    <script type="text/javascript" src="../style/js/PromptWindow.min.js"></script>
+    <script type="text/javascript" src="../style/js/settlement.js"></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- 跟随的顶部 -->
+        <div class="header-box mobile-hide">
+            <!-- 移动 -->
+            <div class="header-mobile">
+                <div class="header-top ">
+                    <a href="" class="classify">
+                        <img src="../style/img/157199320847433454.png" alt="">
+                    </a>
+                    <a href="JavaScript:;" class="logo">
+                        <img src="../style/img/heade-rlogo.png" alt="">
+                    </a>
+                    <a href="" class="logbtn">
+                        <!-- <img src="../style/img/157199321817918653.png" alt="登录"> -->
+                        <img src="../style/img/157199322108277118.png" alt="个人中心">
+                    </a>
+                </div>
+                <!-- 搜索 -->
+                <div class="header-boo">
+                    <div class="header-search">
+                        <a class="search" href=""></a>
+                        <i class="search-icon"></i>
+                        <input class="searchInput" name="" type="text" placeholder="418火爆开抢 满千减百" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <!-- pc -->
+            <div class="header-computer">
+                <div class="header-computer-img">
+                    <a href="/">
+                        <img src="../style/img/heade-rlogo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-computer-list">
+                    <ul>
+                        <li>
+                            <a href="">首页</a>
+                        </li>
+                        <li>
+                            <a href="">分类导航</a>
+                        </li>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">购物车</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-personage">
+                    <a href="" class="logbtn">
+                        <img src="../style/img/157199321817918653.png" alt="登录">
+                        <!-- <img src="../style/img/157199322108277118.png" alt="个人中心"> -->
+                    </a>
+                </div>
+                <div class="navbar-form">
+                    <form id="navbar_search" method="get" action="">
+                        <div class="form-group">
+                            <button type="submit">
+                                <i class="icon-font"></i>
+                            </button>
+                            <input type="text" class="form-control" autocomplete="off" id="search-kw" name="kw" value=""
+                                placeholder="搜索...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- 头部 -->
+        <div class="seek-top on">
+            <a href="JavaScript:;" onclick="window.history.go(-1)" class="return"></a>
+            <span>确认订单</span>
+            <div class="msShortcutMenu"><span></span></div>
+        </div>
+
+        <div class="settlement_box">
+            <!-- 地址 -->
+            <div class="address">
+                <div class="address_text">
+                    <!-- 没有添加收货地址 显示 -->
+                    <!-- <a href="new_address.html" class="empty">您的收货地址为空，点此添加收货地址</a> -->
+                    <!-- 选择收货地址 -->
+                    <a href="choose_address.html" class="address_a">
+                        <div class="address_list">
+                            <div class="arror"></div>
+                            <div class="information">
+                                <div class="information-top">
+                                    <span class="name">林碧威</span>
+                                    <span class="phone">15710680950</span>
+                                    <i class="default"> 默认</i>
+                                    <i class="ification"> 家</i>
+                                </div>
+                                <div class="information-bot">
+                                    <p>福建省厦门市集美区全区 杏林邻家公寓 303 （曹操烧烤楼上）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="overview">
+                <div class="overview-list">
+                    <!-- 展示前三样 -->
+                    <div class="overview-box">
+                        <div class="overview-img">
+                            <img src="//gw.alicdn.com/bao/uploaded/i3/TB11vFubKEJL1JjSZFGYXG6OXXa_M2.SS2_500x500q90.jpg_.webp"
+                                alt="">
+                        </div>
+                        <div class="overview-img">
+                            <img src="//img.alicdn.com/imgextra/i1/2883547872/O1CN011wAoiD281QOy7HLEj_!!2883547872.jpg_640x640q80_.webp"
+                                alt="">
+                        </div>
+                        <div class="overview-img">
+                            <img src="//img.alicdn.com/imgextra/i4/906408620/O1CN0164vm8j2DY0gGZQuVg_!!906408620.jpg_640x640q80_.webp"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="Begin_see">
+                        <p> 共 <span>12</span> 件</p>
+                        <p class="message"> 可留言</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 结算的产品  -->
+
+            <div id="settlement">
+                <div class="mask_layer"></div>
+                <div class="shopping_cart_inStock listing_inStock">
+                    <div class="settlement_h">
+                        <div>商品清单 <span></span></div>
+                    </div>
+                    <div class="order-list">
+                        <div class="list-item" id="13453">
+                            <div class="cmmdty">
+                                <div class="cmmdty-img"> <img
+                                        src="//gw.alicdn.com/bao/uploaded/i3/TB11vFubKEJL1JjSZFGYXG6OXXa_M2.SS2_500x500q90.jpg_.webp"
+                                        alt=""> </div>
+                                <div class="cmmdty-info">
+                                    <a href="  ">
+                                        <p>北欧表情NORHOR/N.U.新都市实木复古墨尔本布艺软包双人床1.8米K</p>
+                                    </a>
+                                    <div class="info-bottom ">
+                                        <div class="market-price"> ¥ <span class="market-price-span">150.33</span>
+                                        </div>
+                                        <div class="number">x2</div>
+                                    </div>
+                                    <div class="region-message"><textarea rows="1" class="commodity-message"
+                                            maxlength="120" placeholder="选填：给商家留言120字以内"></textarea></div>
+                                    <div class="commodity-shopfooter">
+                                        <p>运费：7.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item" id="123124">
+                            <div class="cmmdty">
+                                <div class="cmmdty-img"> <img
+                                        src="//gw.alicdn.com/bao/uploaded/i3/23739472/TB2amDXaBAOyuJjy0FlXXcaxFXa_!!23739472.jpg_500x500q90.jpg_.webp"
+                                        alt=""> </div>
+                                <div class="cmmdty-info"> <a href="  ">
+                                        <p>包邮进口Chabatree无铅玻璃木柄酱汁杯蜂蜜牛奶零食碗迷你蘸酱碗</p>
+                                    </a>
+                                    <div class="info-middle">
+                                        <p><span>颜色:天空之境</span><span>版本:P30 8GB+128GB</span></p>
+                                    </div>
+                                    <div class="info-bottom ">
+                                        <div class="market-price"> ¥ <span class="market-price-span">4894.00</span>
+                                        </div>
+                                        <div class="number">x99</div>
+                                    </div>
+                                    <div class="region-message"><textarea rows="1" class="commodity-message"
+                                            maxlength="120" placeholder="选填：给商家留言120字以内"></textarea></div>
+                                    <div class="commodity-shopfooter">
+                                        <p>免运费</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item" id="1">
+                            <div class="cmmdty">
+                                <div class="cmmdty-img"> <img
+                                        src="//img.alicdn.com/imgextra/i4/906408620/O1CN0164vm8j2DY0gGZQuVg_!!906408620.jpg_640x640q80_.webp"
+                                        alt=""> </div>
+                                <div class="cmmdty-info"> <a href="  ">
+                                        <p>特惠北欧表情/N.U.新都市实木家具墨尔本两抽床头柜角几边几多款T</p>
+                                    </a>
+                                    <div class="info-middle">
+                                        <p></p>
+                                    </div>
+                                    <div class="info-bottom ">
+                                        <div class="market-price"> ¥ <span class="market-price-span">200.00</span>
+                                        </div>
+                                        <div class="number">x1</div>
+                                    </div>
+                                    <div class="region-message"><textarea rows="1" class="commodity-message"
+                                            maxlength="120" placeholder="选填：给商家留言120字以内"></textarea></div>
+                                    <div class="commodity-shopfooter">
+                                        <p>免运费</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item" id="112">
+                            <div class="cmmdty">
+                                <div class="cmmdty-img"> <img
+                                        src="//img.alicdn.com/imgextra/i1/2883547872/O1CN011wAoiD281QOy7HLEj_!!2883547872.jpg_640x640q80_.webp"
+                                        alt=""> </div>
+                                <div class="cmmdty-info"> <a href="  ">
+                                        <p>客厅沙发后置物架实木长条窄桌床头家用沙发边落地靠墙储物架简约</p>
+                                    </a>
+                                    <div class="info-middle">
+                                        <p></p>
+                                    </div>
+                                    <div class="info-bottom ">
+                                        <div class="market-price"> ¥ <span class="market-price-span">2999.33</span>
+                                        </div>
+                                        <div class="number">x1</div>
+                                    </div>
+                                    <div class="region-message"><textarea rows="1" class="commodity-message"
+                                            maxlength="120" placeholder="选填：给商家留言120字以内"></textarea></div>
+                                    <div class="commodity-shopfooter">
+                                        <p>免运费</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item" id="123">
+                            <div class="cmmdty">
+                                <div class="cmmdty-img"> <img
+                                        src="//img.alicdn.com/imgextra/i2/2091511816/O1CN01NFpTNV1PHlqOwpdns_!!2091511816.jpg_2200x2200Q50s50.jpg_.webp"
+                                        alt=""> </div>
+                                <div class="cmmdty-info"> <a href="  ">
+                                        <p>进口80支埃及长绒棉贡缎四件套 纯白绣花五星级床上用品包邮</p>
+                                    </a>
+                                    <div class="info-middle">
+                                        <p></p>
+                                    </div>
+                                    <div class="info-bottom ">
+                                        <div class="market-price"> ¥ <span class="market-price-span">992.00</span>
+                                        </div>
+                                        <div class="number">x1</div>
+                                    </div>
+                                    <div class="region-message"><textarea rows="1" class="commodity-message"
+                                            maxlength="120" placeholder="选填：给商家留言120字以内"></textarea></div>
+                                    <div class="commodity-shopfooter">
+                                        <p>免运费</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 价格 -->
+            <div class="The_price">
+                <div>
+                    <div class="goods">
+                        <span class="text">商品总金额</span>
+                        <span class="money">￥119.90</span>
+                    </div>
+                    <div class="freight">
+                        <span class="text">优惠</span>
+                        <span class="money">￥66.00</span>
+                    </div>
+                    <div class="freight">
+                        <span class="text">运费</span>
+                        <span class="money">￥5.00</span>
+                    </div>
+                </div>
+                <span class="fq_span">
+                    支付成功后将尽快为您发货
+                </span>
+                <p>应付金额：<span>￥ 14.90</span></p>
+
+            </div>
+            <!-- 付款方式 -->
+
+            <!-- 点击付钱 应该吧 有填写的留言发送出去 -->
+            <div class="payment">
+                <button class="Terms">钱包余额支付</button>
+                <button class="Terms wx">微信支付</button>
+                <button class="Terms zfb">支付宝支付</button>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

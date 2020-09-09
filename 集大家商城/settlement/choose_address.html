@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理地址</title>
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <!-- 用户id -->
+    <meta name="user-id " id="user-id" content="123465" />
+    <link type="text/css" rel="stylesheet" href="../style/css/address.css">
+    <link type="text/css" rel="stylesheet" href="../style/css/common.css">
+    <script type="text/javascript" src="../style/js/jquery_v3.4.1.min.js"></script>
+    <script type="text/javascript" src="../style/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="../style/js/flexible.js"></script>
+    <script type="text/javascript" src="../style/js/common.js"></script>
+    <script type="text/javascript" src="../style/js/PromptWindow.min.js"></script>
+    <script type="text/javascript" src="../style/js/address.js"></script>
+   
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- 跟随的顶部 -->
+        <div class="header-box mobile-hide">
+            <!-- 移动 -->
+            <div class="header-mobile">
+                <div class="header-top ">
+                    <a href="" class="classify">
+                        <img src="../style/img/157199320847433454.png" alt="">
+                    </a>
+                    <a href="JavaScript:;" class="logo">
+                        <img src="../style/img/heade-rlogo.png" alt="">
+                    </a>
+                    <a href="" class="logbtn">
+                        <!-- <img src="../style/img/157199321817918653.png" alt="登录"> -->
+                        <img src="../style/img/157199322108277118.png" alt="个人中心">
+                    </a>
+                </div>
+                <!-- 搜索 -->
+                <div class="header-boo">
+                    <div class="header-search">
+                        <a class="search" href=""></a>
+                        <i class="search-icon"></i>
+                        <input class="searchInput" name="" type="text" placeholder="418火爆开抢 满千减百" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <!-- pc -->
+            <div class="header-computer">
+                <div class="header-computer-img">
+                    <a href="/">
+                        <img src="../style/img/heade-rlogo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-computer-list">
+                    <ul>
+                        <li>
+                            <a href="">首页</a>
+                        </li>
+                        <li>
+                            <a href="">分类导航</a>
+                        </li>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">购物车</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-personage">
+                    <a href="" class="logbtn">
+                        <img src="../style/img/157199321817918653.png" alt="登录">
+                        <!-- <img src="../style/img/157199322108277118.png" alt="个人中心"> -->
+                    </a>
+                </div>
+                <div class="navbar-form">
+                    <form id="navbar_search" method="get" action="">
+                        <div class="form-group">
+                            <button type="submit">
+                                <i class="icon-font"></i>
+                            </button>
+                            <input type="text" class="form-control" autocomplete="off" id="search-kw" name="kw" value=""
+                                placeholder="搜索...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- 头部 -->
+        <div class="seek-top on">
+            <a href="JavaScript:;" onclick="window.history.go(-1)" class="return"></a>
+            <span>管理地址</span>
+            <div class="msShortcutMenu"><span></span></div>
+        </div>
+
+        <div class="address_h">
+            <span>配送地址</span>
+            <a href="new_address.html"> 新增配送地址</a>
+        </div>
+        <!--  -->
+        <div class="address_choose" id="address_choose"> </div>
+    </div>
+</body>
+
+</html>
