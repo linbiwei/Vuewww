@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/better-scroll@latest/dist/better-scroll.js"></script>
+
+<!-- minify -->
+<script src="1.js"></script>
+</head>
+<body>
+    <style>
+        .wrapper{
+            background-color: aqua;
+            height: 100px;
+            overflow: hidden;
+        }
+    </style>
+    <div class="wrapper" id="wrapper">
+        <ul class="content">
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+            <li>我是li标签</li>
+        </ul>
+    </div>
+
+    <script>
+        
+        let wrapper = document.getElementById("wrapper");
+        let bs = BetterScroll.createBScroll(wrapper, {
+            probeType:3,
+            // probeType:  滚动监听
+            //  0 , 1 不监听
+            //  2 滚动监听，但是滑动惯性过程不监听
+            //  3 滚动监听，滑动惯性过程监听
+            click:true,
+            //  click 插件里的其他事件可行性
+            pullUpLoad:true
+            // pullUpLoad  上拉操作
+        })
+
+        // 滚动回调
+        bs.on('scroll',(position)=>{
+            // console.log(position);
+        })
+
+        bs.on('pullingUp',()=>{
+            // 只执行一次 
+            console.log(1);
+            // 每次执行后调用 可重复
+            bs.finishPullUp()
+        })
+        
+    </script>
+
+ 
+</body>
+</html>

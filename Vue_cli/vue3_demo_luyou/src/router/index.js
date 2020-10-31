@@ -30,7 +30,7 @@ const routes = [
         redirect: '/home'
     },
     {
-        path: '/home',
+        path: '/home', 
         component: Home,
         //  路由嵌套 
         children: [
@@ -48,10 +48,9 @@ const routes = [
                 component: Homemsess 
             },
         ],
-
         // 给导航守卫定的标题
         meta: { 
-            title:'首页'
+            title:'首页',
          }
     },
     {
@@ -98,7 +97,7 @@ const router = new VueRouter({
 
 // 前置狗子  跳转前
 router.beforeEach((to, from, next) => {
-    console.log(' 前置狗子  跳转前')
+    // console.log(' 前置狗子  跳转前')
     // 存在嵌套路由 就要用 to.matched[0]
     document.title= to.matched[0].meta.title
     next()
@@ -106,7 +105,7 @@ router.beforeEach((to, from, next) => {
 
 // 后置钩子  跳转后
 router.afterEach( route => {
-    console.log('后置钩子 跳转后')
+    // console.log('后置钩子 跳转后')
 })
 
 

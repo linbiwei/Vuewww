@@ -1,9 +1,0 @@
-assets      资源
-common      公共的js
-components  公共组件
-    common      下个项目可复用
-    content     当前项目的
-router      路由
-views       大型视图
-store       vuex
-network     网络请求相关

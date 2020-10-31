@@ -12,3 +12,7 @@
          vue create  (项目名字)
       启动
          npm run serve
+
+
+// 滚动插件安装
+npm install better-scroll --save

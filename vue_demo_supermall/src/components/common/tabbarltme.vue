@@ -46,7 +46,7 @@ export default {
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-width: 1120px;
+  max-width: 630px;
   z-index: 2;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
